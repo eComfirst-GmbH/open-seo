@@ -19,6 +19,8 @@ dist-sourcemaps/
 !.env.preview.example
 !.env.production.example
 !.env.selfhost.example
+!.env.ecomfirst.example
+deploy/ecomfirst/.env.ecomfirst.example
 .vercel
 .output
 .nitro

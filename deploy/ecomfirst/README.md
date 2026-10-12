@@ -19,7 +19,7 @@ docker compose pull && docker compose up -d
 ```bash
 git clone https://github.com/eComfirst-GmbH/open-seo.git /opt/openseo
 cd /opt/openseo
-cp deploy/ecomfirst/.env.ecomfirst.example .env
+cp deploy/ecomfirst/env.ecomfirst.example .env
 # DATAFORSEO_API_KEY und ggf. OPENROUTER_API_KEY eintragen
 docker compose -f compose.yaml -f deploy/ecomfirst/compose.ecomfirst.yaml up -d
 ```
