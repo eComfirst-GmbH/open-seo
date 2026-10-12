@@ -1,0 +1,11 @@
+# eComfirst overlay – use with repo root compose.yaml:
+#   docker compose -f compose.yaml -f deploy/ecomfirst/compose.ecomfirst.yaml up -d
+services:
+  open-seo:
+    environment:
+      - PORT=3001
+      - ALLOWED_HOST=seo.ecomfirst.de
+      - AUTH_MODE=local_noauth
+      - OPENSEO_TELEMETRY_DISABLED=${OPENSEO_TELEMETRY_DISABLED:-1}
+    ports:
+      - "127.0.0.1:3001:3001"
